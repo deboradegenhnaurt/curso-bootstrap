@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                
+                <button class="btn btn-primary">OK</button>
+                <button class="btn btn-secondary">OK</button>
+                <button class="btn btn-success">OK</button>
+                <button class="btn btn-danger">OK</button>
+                <button class="btn btn-warning">OK</button>
+                <button class="btn btn-info">OK</button>
+                <button class="btn btn-dark">OK</button>
+                <button class="btn btn-light">OK</button>
+                <button class="btn btn-link">OK</button>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                
+                <input type="button" class="btn btn-primary" value="OK">
+                <a href="" class="btn btn-primary">OK</a>
+                <button class="btn btn-primary">OK</button>
+
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-outline-primary">OK</button>
+                <button class="btn btn-outline-warning">OK</button>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-success btn-lg">OK</button>
+                <button class="btn btn-danger btn-sm">OK</button>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-primary btn-block">OK</button>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <a href="#" class="btn btn-primary active btn-block" aria-pressed="true">Link</a>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-primary btn-block" disabled>OK</button>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-success" id="btn-auto-save" data-toggle="button">Auto Save</button>
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                    <label for="option1" class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" checked> 1
+                    </label>
+
+                    <label for="option2" class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2"> 2
+                    </label>
+
+                    <label for="option3" class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3"> 3
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="btn btn-primary" id="btn-click">Ativa/Desativa Auto Save</button>
+
+      
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $ (( ) => {
+
+        $('#btn-click').on('click', e => {
+
+            $('#btn-auto-save').button('toggle');
+        });
+    
+    });    
+    </script>
+  
+
+</body>
+</html>

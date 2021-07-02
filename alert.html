@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="alert">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum minus iusto nihil dolor dolore. 
+        </div>
+
+        
+        <div class="alert alert-success" role="alert">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum minus iusto nihil dolor dolore. 
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="alert alert-secondary">Hello Hcode</div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="alert alert-primary">Hello Hcode</div>
+
+            </div>
+        
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-danger">Error</div>
+            </div>
+
+            <div class="col-sm">
+                <div class="alert alert-warning">Error</div>
+            </div>
+
+        </div>
+
+        <div class="alert alert-info">
+            Informação! 
+            <a href="http://youtube.com/hcodebrasil">YouTube</a>
+        </div>
+
+        <div class="alert alert-dark">
+            <h4>Título</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ullam earum dolor doloremque veniam incidunt corrupti.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam mollitia explicabo cumque repellendus voluptatem.</p>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita magnam ipsam, repellendus magni unde dolore rerum at cum nemo?
+            <button class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+            </button>            
+        </div>
+           
+        <button id="btn-close-all" type="button">Fechar Todos os Alertas</button>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    $ (( ) => {
+        $('btn-close-all').on('click', e => {
+            $('.alert').alert('close');
+        });
+    });    
+    </script>
+
+  
+
+</body>
+</html>
