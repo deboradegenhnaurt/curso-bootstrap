@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alert</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
 <body>
@@ -37,11 +37,15 @@
 
         <div class="row">
             <div class="col-sm">
+
                 <div class="alert alert-danger">Error</div>
+
             </div>
 
             <div class="col-sm">
+
                 <div class="alert alert-warning">Error</div>
+
             </div>
 
         </div>
@@ -73,7 +77,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
     $ (( ) => {
-        $('btn-close-all').on('click', e => {
+        $('#btn-close-all').on('click', e => {
             $('.alert').alert('close');
         });
     });    

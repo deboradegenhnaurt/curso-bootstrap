@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Events</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-1">Abrir</button>
+
+    <div class="modal" id="modal-1">
+
+        <div class="modal-dialog modal-dialog-scrollable">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <div class="modal-title">Teste do Modal</div>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>
+                    
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum excepturi odio, soluta debitis quod quisquam sint voluptate impedit alias temporibus.</p>    
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btn-continue">Continuar</button>
+                </div>
+
+            </div>     
+
+        </div>
+
+    </div>        
+        
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        $(() => {
+
+            $("#modal-1").on('show.bs.modal', e => {
+                console.log('show.bs.modal', e.target);
+            }).on('show.bs.modal', e => {
+                console.log('show.bs.nodal', e.target);
+            }).on('hide.bs.modal', e => {
+                console.log('hide.bs.nodal', e.target);
+            }).on('hidden.bs.modal', e => {
+                console.log('hidden.bs.nodal', e.target);
+            
+            });
+            
+        });
+        </script>
+

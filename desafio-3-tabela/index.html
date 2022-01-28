@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">        
+            <div class="col-12">
+                <header>
+                    <h2 class="text-center">There Are Applications Down</h2>
+                </header>
+            </div>
+        </div>    
+               
+
+            <h4 class="text-danger">Down tags:</h4>
+
+                
+                <table class="table table-responsive table-hover table-bordered table-sm">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Tag</th>
+                            <th>Status</th>
+                            <th>Cause</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>crm</td>
+                            <td>503</td>
+                            <td>[{'tag': 'si:crm:crm', 'status': 500}]</td>
+                        </tr>
+    
+                        <tr>
+                            <td>educacao</td>
+                            <td>503</td>
+                            <td>[{'tag': 'lista_espera_apps', 'status': 503}]</td>
+                        </tr>
+    
+                        <tr>
+                            <td>lista_espera_apps</td>
+                            <td>503</td>
+                            <td>[{'tag': 'educacao:educacao:lista', 'status': 500}]</td>
+                        </tr>     
+                        </tbody>
+                </table> 
+                
+            <h4 class="text-danger">Down applications:</h4>
+
+                <table class="table table-responsive table-hover table-bordered table-sm">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Application</th>
+                            <th>Labels</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>https://artemis-scripts.cloud.betha.com.br</td>
+                            <td>['plataforma', 'scripts', 'ped']</td>
+                            <td>500</td>
+                        </tr>
+        
+                        <tr>
+                            <td>https://storage-educacao.cloud.betha.com.br/minio/index.html</td>
+                            <td>['infraestrutura', 'storage-educacao', 'ped']</td>
+                            <td>500</td>
+                        </tr>
+        
+                        <tr>
+                            <td>https://artemis-relatorio.cloud.betha.com.br</td>
+                            <td>['ped', 'plataforma', 'relatorios']</td>
+                            <td>500</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>https://my-preferences.educacao.betha.cloud/my-preferences/application/health</td>
+                            <td>['educacao', 'preferences', 'professores']</td>
+                            <td>500</td>
+                        </tr>  
+                        
+                        <tr>
+                            <td>https://grafana.services.betha.cloud/login</td>
+                            <td>['infraestrutura', 'ped', 'grafana-services']</td>
+                            <td>500</td>
+                        </tr>  
+
+                        <tr>
+                            <td>https://opsmanager.services.betha.cloud</td>
+                            <td>['infra', 'opsmanager', 'ped']</td>
+                            <td>500</td>
+                        </tr>  
+
+                        <tr>
+                            <td>https://lista-espera-dados.educacao.betha.cloud/dados/health/check2</td>
+                            <td>['educacao', 'lista']</td>
+                            <td>500</td>
+                        </tr>  
+                        
+                        <tr>
+                            <td>https://artemis-crm.cloud.betha.com.br</td>
+                            <td>['si', 'crm']</td>
+                            <td>500</td>
+                        </tr> 
+
+                        <tr>
+                            <td>https://charts.services.betha.cloud/health</td>
+                            <td>['infraestrutura', 'ped', 'chartmuseum']</td>
+                            <td>500</td>
+                        </tr> 
+
+                        <tr>
+                            <td>https://artemis-tarefas.cloud.betha.com.br</td>
+                            <td>['gestao_estrategica', 'si']</td>
+                            <td>500</td>
+                        </tr> 
+
+                        <tr>
+                            <td>https://gitlab.services.betha.cloud</td>
+                            <td>['infra', 'ped', 'gitlab']</td>
+                            <td>500</td>
+                        </tr>           
+                    </tbody>
+                </table> 
+
+            <h4 class="text-success">Operational tags:</h4>
+
+                <table class="table table-responsive table-hover table-bordered table-sm">
+                    <thead class="table-success">
+                        <tr>
+                            <th>Tag</th>
+                            <th>Status</th>
+                            <th>Applications</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>autenticacao</td>
+                            <td>200</td>
+                            <td>[]</td>
+                        </tr>
+    
+                        <tr>
+                            <td>autorizacao</td>
+                            <td>200</td>
+                            <td>[]</td>
+                        </tr>
+    
+                        <tr>
+                            <td>contas_usuario	</td>
+                            <td>200</td>
+                            <td>[]</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>email</td>
+                            <td>200</td>
+                            <td>[]</td>
+                        </tr>  
+                    
+                        <tr>
+                            <td>notifications</td>
+                            <td>200</td>
+                            <td>[]</td>
+                        </tr>  
+
+                        <tr>
+                            <td>assinatura</td>
+                            <td>200</td>
+                            <td>[]</td>
+                        </tr>                             
+                    </tbody>
+                </table> 
+
+    </div>
+
+   
+</body>
+</html>

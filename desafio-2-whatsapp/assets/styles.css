@@ -1,0 +1,62 @@
+
+header, footer {
+    background-color: #EEE;
+    padding: 5px;
+    min-height: 60px;
+}
+
+header img, .list-group img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header img {
+    margin-left: 16px;
+}
+
+main{
+    background-color: #e5ddd5;
+    min-height: calc(100vh - 121px);
+}
+
+header {
+    border-bottom: #DBDBDB 1px solid;
+}
+
+h6{
+    margin: 0;
+}
+
+.timeago{
+    color:#999;
+    font-size: .8em;
+}
+
+.badge-success{
+    background-color: #09d261;
+}
+
+#search{
+    background-color: #f8f8f8;
+    min-height: 50px;
+}
+
+#panel-left{
+    border-right: #DBDBDB 1px solid;
+    color: #4d4d4d;
+}
+
+#panel-left small{
+    color: #9b9b99;
+}
+
+.list-group-item {
+    border-right: none;
+    border-left: none;
+    border-color: #f8f8f8;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

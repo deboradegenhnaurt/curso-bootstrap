@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Badge</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
 <body>
@@ -18,12 +18,11 @@
     
     <hr>
 
-    <button type="button" class="btn btn-primary">Clique <span class="badge badge-light">0</span></button>
+    <button id="btn-click" type="button" class="btn btn-primary">Clique <span class="badge badge-light">0</span></button>
 
     <hr>
 
-    <button id="btn-click" type="button" class="btn btn-primary">
-        Caixa de Entrada <span class="badge bagde-light">5</span>     
+    <button type="button" class="btn btn-primary">Caixa de Entrada <span class="badge badge-light">5</span>     
         <span class="sr-only">Há 5 mensagens não lidas</span>
     </button>
 
@@ -50,19 +49,16 @@
 
 
 
-
-
-
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    $ (( ) => {
+    $(( ) => {
 
-        $('#btn-click').on('click', e => {
-            
-            const valor = parseInt($(e.target).find('.badge').text();
+            $('#btn-click').on('click', e => {
 
-            $(e.target).find('.badge').text(valor + 1);
+                const valor = parseInt($(e.target).find('.badge').text());
+
+                $(e.target).find('.badge').text(valor + 1);
 
         });
     
